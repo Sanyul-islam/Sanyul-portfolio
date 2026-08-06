@@ -1,10 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
+@theme {
+  /* Colors — replaces the old tailwind.config.js theme.extend.colors */
+  --color-ink: #0b121f;        /* page background */
+  --color-panel: #111a2b;      /* slightly lighter panel background */
+  --color-panel-line: #1e293f; /* borders / dividers */
+  --color-muted: #8891a7;      /* secondary text */
+  --color-accent: #f15a38;     /* signature coral/orange */
+
+  /* Fonts — mapped to font-display / font-body utilities */
   --font-display: "Poppins", sans-serif;
   --font-body: "Inter", sans-serif;
+
+  /* Layout — mapped to max-w-content utility */
+  --spacing-content: 1180px;
 }
 
 html {
@@ -12,7 +21,7 @@ html {
 }
 
 body {
-  background-color: #0b121f;
+  background-color: var(--color-ink);
   color: #ffffff;
 }
 
@@ -21,7 +30,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  color: #8891a7;
+  color: var(--color-muted);
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -31,13 +40,13 @@ body {
   content: "";
   width: 26px;
   height: 2px;
-  background: #f15a38;
+  background: var(--color-accent);
   display: inline-block;
 }
 
 .btn-filled {
-  background-color: #f15a38;
-  color: #0b121f;
+  background-color: var(--color-accent);
+  color: var(--color-ink);
   font-weight: 600;
   padding: 0.85rem 1.6rem;
   border-radius: 0.4rem;
@@ -51,7 +60,7 @@ body {
 }
 
 .btn-outline {
-  border: 1px solid #2c3750;
+  border: 1px solid var(--color-panel-line);
   color: #ffffff;
   font-weight: 600;
   padding: 0.85rem 1.6rem;
@@ -61,12 +70,12 @@ body {
 }
 
 .btn-outline:hover {
-  border-color: #f15a38;
+  border-color: var(--color-accent);
   transform: translateY(-2px);
 }
 
 .tag-pill {
-  border: 1px solid #2c3750;
+  border: 1px solid var(--color-panel-line);
   color: #b7bfd1;
   font-size: 0.72rem;
   padding: 0.25rem 0.7rem;
@@ -88,6 +97,6 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #f15a38;
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
 }
