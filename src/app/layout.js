@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Sanyul Islam — Software Developer",
+  title: "Sanyul Islam — Frontend Developer",
   description:
-    "Portfolio of Sanyul Islam, a software developer building websites, apps, and hosting solutions.",
+    "Portfolio of Sanyul Islam, a frontend developer building websites, apps, and hosting solutions.",
 };
 
 export default function RootLayout({ children }) {
