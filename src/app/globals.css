@@ -6,7 +6,7 @@
   --color-panel: #111a2b;      /* slightly lighter panel background */
   --color-panel-line: #1e293f; /* borders / dividers */
   --color-muted: #8891a7;      /* secondary text */
-  --color-accent: #f15a38;     /* signature coral/orange */
+  --color-accent: #ff7f50;     /* signature coral/orange */
 
   /* Fonts — mapped to font-display / font-body utilities */
   --font-display: "Poppins", sans-serif;
