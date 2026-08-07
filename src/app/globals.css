@@ -26,6 +26,9 @@ body {
 }
 
 /* Small reusable pieces */
+section {
+  scroll-margin-top: 90px;
+}
 .section-eyebrow {
   display: inline-flex;
   align-items: center;

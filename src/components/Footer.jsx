@@ -35,7 +35,7 @@ export default function Footer() {
             <ul className="mt-5 space-y-3 text-sm">
               <li>
                 <Link
-                  href="/"
+                  href="/#home"
                   className="text-muted transition hover:text-accent"
                 >
                   Home
