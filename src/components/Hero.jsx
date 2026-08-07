@@ -20,7 +20,7 @@ export default function Hero() {
             <a href="#contacts" className="btn-filled">
               Got a project?
             </a>
-            <a href="/resume.pdf" className="btn-outline">
+            <a href="#" className="btn-outline">
               My resume
             </a>
           </div>
