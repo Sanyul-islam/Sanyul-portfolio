@@ -30,15 +30,15 @@ export default function Hero() {
         </div>
 
         {/* Photo column */}
-        <div className="relative h-125 w-full mt-4">
-          <Image
+        <div className="relative h-125 w-full mt-4 hidden md:flex">
+          {/* <Image
             src="/hero-image.jpg"
             alt="Banner"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover  bg-linear-to-tr from-accent to-accent/50 p-0.5 md:h-150"
             priority
-          />
+          /> */}
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@heroui/react";
 import { useEffect, useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -89,6 +90,9 @@ export default function Navbar() {
             );
           })}
         </ul>
+        <div className="">
+          <Button className="rounded-full">Hire Me</Button>
+        </div>
 
         {/* Mobile menu button */}
         <button
