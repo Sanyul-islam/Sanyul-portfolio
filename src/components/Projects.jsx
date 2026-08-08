@@ -96,7 +96,7 @@ export default function Projects() {
       className="mx-auto max-w-content px-6 py-24 md:px-10"
     >
       <div className="text-center">
-        <h2 className="font-display text-3xl font-bold md:text-4xl">
+        <h2 className="font-display header-gradient text-3xl font-bold md:text-4xl">
           Projects
         </h2>
         <span className="mx-auto mt-3 block h-6 w-px bg-accent" />

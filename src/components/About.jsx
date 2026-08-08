@@ -83,10 +83,14 @@ export default function About() {
           <div className="mt-10 grid grid-cols-3 gap-6 text-center">
             {stats.map((stat) => (
               <div key={stat.label}>
-                <p className="font-display text-2xl font-bold md:text-3xl">
-                  {stat.value}
-                  <span className="text-accent">{stat.suffix}</span>
-                </p>
+                <div className="flex text-center items-center justify-center">
+                  <p className="font-display header-gradient text-2xl font-bold md:text-3xl">
+                    {stat.value}
+                  </p>
+                  <span className="text-accent text-2xl font-bold md:text-3xl">
+                    {stat.suffix}
+                  </span>
+                </div>
                 <p className="mt-1 text-xs text-muted">{stat.label}</p>
               </div>
             ))}

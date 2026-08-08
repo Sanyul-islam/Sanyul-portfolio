@@ -15,7 +15,7 @@ export default function Footer() {
           <div className="text-center">
             <Link
               href="/"
-              className="font-display text-2xl font-bold text-white"
+              className="font-display text-2xl font-bold header-gradient"
             >
               Sanyul<span className="text-accent">.</span>
             </Link>
@@ -28,7 +28,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="text-center">
-            <h3 className="font-display text-lg font-semibold text-white">
+            <h3 className="font-display text-lg font-semibold header-gradient">
               Quick Links
             </h3>
 
@@ -82,7 +82,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-display text-lg font-semibold text-white">
+            <h3 className="font-display header-gradient text-lg font-semibold text-white">
               Let&apos;s Connect
             </h3>
 
@@ -159,8 +159,9 @@ export default function Footer() {
           </p>
 
           <p className="text-muted">
-            Built with <span className="font-semibold text-white">Next.js</span>{" "}
-            & <span className="font-semibold text-white">Tailwind CSS</span>
+            Built with{" "}
+            <span className="font-semibold header-gradient">Next.js</span> &{" "}
+            <span className="font-semibold header-gradient">Tailwind CSS</span>
           </p>
 
           {/* Back to top */}

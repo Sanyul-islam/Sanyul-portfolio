@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card,Chip } from "@heroui/react";
 import Link from "next/link";
+import { LuExternalLink } from "react-icons/lu";
 
 export default function ProjectCard({ project, reverse }) {
   const { title, tags, description, image, githubUrl, liveUrl } = project;
@@ -13,14 +14,12 @@ export default function ProjectCard({ project, reverse }) {
     >
       <div>
         <Card.Header className="flex-col items-start p-0">
-          <Card.Title className="font-display text-2xl font-semibold md:text-[26px] text-white">
+          <Card.Title className="font-display header-gradient text-2xl font-semibold md:text-[26px]">
             {title}
           </Card.Title>
           <ul className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
-              <Chip key={tag}>
-                {tag}
-              </Chip>
+              <Chip key={tag}>{tag}</Chip>
             ))}
           </ul>
           <Card.Description className="mt-5 max-w-md text-sm leading-relaxed text-muted">
@@ -34,11 +33,11 @@ export default function ProjectCard({ project, reverse }) {
           </a>
           <div className="flex flex-col p-3">
             <div className="flex items-center justify-center">
-              
               <Link
                 href={liveUrl}
-                className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold text-white hover:text-accent"
+                className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold header-gradient hover:text-accent"
               >
+                <LuExternalLink className="text-md text-blue-300" />
                 View project
               </Link>
             </div>

@@ -7,13 +7,12 @@ export default function Contact() {
       <p className="section-eyebrow">Contacts</p>
 
       <div className="mt-6 grid gap-12 md:grid-cols-2 md:items-center">
-        
-          <h2 className="font-display text-3xl font-bold leading-tight md:text-4xl">
-            Have a project?
-            <br />
-            Let&apos;s talk!
-          </h2>
-        
+        <h2 className="font-display header-gradient text-3xl font-bold leading-tight md:text-4xl">
+          Have a project?
+          <br />
+          Let&apos;s talk!
+        </h2>
+
         <div className="border border-accent p-8">
           <form className="space-y-6">
             <div>
