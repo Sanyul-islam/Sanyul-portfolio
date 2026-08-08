@@ -92,7 +92,7 @@ export default function Footer() {
             </p>
 
             <a
-              href="mailto:yourmail@gmail.com"
+              href="mailto:imsanyulislam@gmail.com"
               className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent transition hover:opacity-80"
             >
               <HiOutlineMail size={20} />
@@ -102,7 +102,7 @@ export default function Footer() {
             {/* Social icons */}
             <div className="mt-6 flex items-center gap-3">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Sanyul-islam/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -112,7 +112,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/sanyul-islam/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -122,7 +122,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://facebook.com/yourusername"
+                href="https://www.facebook.com/share/17dkZJSFVG/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -132,7 +132,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://twitter.com/yourusername"
+                href="https://x.com/Sanyulislam"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
