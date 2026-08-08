@@ -52,7 +52,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-panelLine/50 bg-background/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-ink/60 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-content items-center justify-between px-6 py-5 md:px-10">
         {/* Logo */}
         <a
@@ -103,7 +103,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`overflow-hidden border-t border-panelLine/50 transition-all duration-300 md:hidden ${
+        className={`overflow-hidden border-t border-white/10 bg-ink/90 backdrop-blur-xl transition-all duration-300 md:hidden ${
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >

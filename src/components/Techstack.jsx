@@ -3,9 +3,18 @@ const stack = [
   "CSS",
   "Javascript",
   "Node.js",
+  "Express.js",
+  "MongoDB",
+  "BetterAuth",
   "React",
+  "Next.js",
+  "HeroUI",
+  "TailwindCSS",
   "Git",
   "Github",
+  "Vercel",
+  "Figma",
+  "Netlify",
 ];
 
 export default function TechStack() {

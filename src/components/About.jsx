@@ -1,66 +1,19 @@
+import { TbDeviceImacCog } from "react-icons/tb";
+import { FaMobileScreenButton } from "react-icons/fa6";
+import { AiOutlineCloudServer } from "react-icons/ai";
+
 const services = [
   {
     title: "Website Development",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
-        <path
-          d="M8 4L2 12l6 8M16 4l6 8-6 8"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    ),
+    icon: <TbDeviceImacCog />,
   },
   {
     title: "App Development",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
-        <rect
-          x="6"
-          y="2"
-          width="12"
-          height="20"
-          rx="2"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <path
-          d="M10 18h4"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    icon: <FaMobileScreenButton />,
   },
   {
     title: "Website Hosting",
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
-        <rect
-          x="3"
-          y="4"
-          width="18"
-          height="6"
-          rx="1.5"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <rect
-          x="3"
-          y="14"
-          width="18"
-          height="6"
-          rx="1.5"
-          stroke="currentColor"
-          strokeWidth="1.8"
-        />
-        <circle cx="7" cy="7" r="0.8" fill="currentColor" />
-        <circle cx="7" cy="17" r="0.8" fill="currentColor" />
-      </svg>
-    ),
+    icon: <AiOutlineCloudServer />,
   },
 ];
 

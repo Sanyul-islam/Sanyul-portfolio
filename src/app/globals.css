@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "@heroui/styles";
 
 @theme {
   /* Colors — replaces the old tailwind.config.js theme.extend.colors */
