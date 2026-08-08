@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Top section */}
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {/* About */}
-          <div className="text-center">
+          <div className="text-center mx-auto">
             <Link
               href="/"
               className="font-display text-2xl font-bold header-gradient"
