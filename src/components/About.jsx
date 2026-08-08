@@ -1,6 +1,7 @@
 import { TbDeviceImacCog } from "react-icons/tb";
 import { FaMobileScreenButton } from "react-icons/fa6";
 import { AiOutlineCloudServer } from "react-icons/ai";
+import { Chip } from "@heroui/react";
 
 const services = [
   {
@@ -10,6 +11,9 @@ const services = [
   {
     title: "App Development",
     icon: <FaMobileScreenButton />,
+    badge: <Chip variant="soft" color="success">
+      Coming Soon
+    </Chip>,
   },
   {
     title: "Website Hosting",
@@ -55,8 +59,9 @@ export default function About() {
               </span>
 
               {/* Title */}
-              <span className="font-display text-lg font-medium">
-                {service.title}
+              <span className="font-display header-gradient text-lg font-medium flex items-center gap-2">
+                <span>{service.title}</span>
+                {service.badge}
               </span>
             </li>
           ))}
@@ -64,7 +69,7 @@ export default function About() {
 
         {/* Copy + stats */}
         <div>
-          <h2 className="font-display text-3xl font-bold md:text-4xl">
+          <h2 className="font-display header-gradient text-3xl font-bold md:text-4xl">
             About me
           </h2>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-muted">

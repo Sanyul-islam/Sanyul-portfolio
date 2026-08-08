@@ -12,7 +12,7 @@ export default function Hero() {
           <p className="mt-2 font-display text-2xl text-muted md:text-3xl">
             I&apos;m Sanyul
           </p>
-          <h1 className="mt-3 font-display text-4xl font-bold leading-tight md:text-5xl">
+          <h1 className="mt-3 font-display header-gradient text-4xl font-bold leading-tight md:text-5xl">
             Frontend Developer
           </h1>
 
@@ -20,7 +20,7 @@ export default function Hero() {
             <a href="#contacts" className="btn-filled">
               Got a project?
             </a>
-            <a href="#" className="btn-outline">
+            <a href="#" className="btn-outline header-gradient">
               My resume
             </a>
           </div>

@@ -29,7 +29,7 @@ export default function TechStack() {
     <div className="mx-auto mt-6 max-w-content overflow-hidden border-y border-panelLine bg-panel px-6 py-6 md:px-10">
       <Swiper
         modules={[Autoplay]}
-        spaceBetween={40}
+        spaceBetween={20}
         slidesPerView={2}
         loop={true}
         speed={5000}

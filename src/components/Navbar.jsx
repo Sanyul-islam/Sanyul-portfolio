@@ -58,7 +58,7 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={() => handleClick("#home")}
-          className="font-display text-xl font-bold"
+          className="font-display header-gradient text-xl font-bold"
         >
           Sanyul<span className="text-accent">.</span>
         </a>
