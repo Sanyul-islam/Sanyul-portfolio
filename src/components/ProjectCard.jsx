@@ -35,6 +35,8 @@ export default function ProjectCard({ project, reverse }) {
             <div className="flex items-center justify-center">
               <Link
                 href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold header-gradient hover:text-accent"
               >
                 <LuExternalLink className="text-md text-blue-300" />
@@ -46,13 +48,13 @@ export default function ProjectCard({ project, reverse }) {
         </Card.Footer>
       </div>
 
-      <Card.Content className="overflow-hidden rounded-xl border border-panel-line bg-panel p-0">
+      <Card.Content className="overflow-hidden rounded-xl border border-panel-line bg-panel p-2">
         <Image
           src={image}
           alt={`${title} preview`}
           height={300}
           width={300}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-cover rounded-2xl"
         />
       </Card.Content>
     </Card>
