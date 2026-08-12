@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -7,10 +8,10 @@ export default function Hero() {
         {/* Text column */}
         <div className="px-6 pt-6 md:px-10 md:pt-10">
           <div className="flex gap-0.5">
-          <span className="section-eyebrow"></span>
-          <p className="font-display  text-muted text-2xl md:text-3xl">
-            Hello<span className="text-accent">.</span>
-          </p>
+            <span className="section-eyebrow"></span>
+            <p className="font-display  text-muted text-2xl md:text-3xl">
+              Hello<span className="text-accent">.</span>
+            </p>
           </div>
           <p className="mt-2 font-display text-2xl text-muted md:text-3xl">
             I&apos;m Sanyul
@@ -20,12 +21,16 @@ export default function Hero() {
           </h1>
 
           <div className="mt-8 flex flex-wrap gap-4">
-            <a href="#contacts" className="btn-filled">
+            <Link href="#contacts" className="btn-filled">
               Got a project?
-            </a>
-            <a href="#" className="btn-outline header-gradient">
+            </Link>
+            <Link
+              href="https://drive.google.com/file/d/1ExGcbumLP5VvQHJxTOjNgObaQCXeMnQl/view"
+              target="_blank"
+              className="btn-outline header-gradient"
+            >
               My resume
-            </a>
+            </Link>
           </div>
         </div>
 
