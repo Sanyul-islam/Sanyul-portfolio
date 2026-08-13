@@ -25,7 +25,7 @@ export default function Hero() {
               Got a project?
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1ExGcbumLP5VvQHJxTOjNgObaQCXeMnQl/view"
+              href="https://drive.google.com/file/d/1UTwMsZoFQ7LpRarDFf1CRbreXEBJaY9e/view?usp=sharing"
               target="_blank"
               className="btn-outline header-gradient"
             >
