@@ -24,20 +24,21 @@ function generateShootingStars(count) {
     left: Math.random() * 120 - 10,
     top: Math.random() * 100,
     delay: Math.random() * 15,
-    duration: Math.random() * 8 + 12,
+    duration: Math.random() * 6 + 12,
     size: Math.random() * 80 + 80,
   }));
 }
 
 export default function StarryBackground({ children }) {
-  const [stars, setStars] = useState([]);
-  const [shootingStars, setShootingStars] = useState([]);
+  const [stars] = useState(() => generateStars(STAR_COUNT));
+
+  const [shootingStars] = useState(() =>
+    generateShootingStars(SHOOTING_STAR_COUNT)
+  );
+
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    setStars(generateStars(STAR_COUNT));
-    setShootingStars(generateShootingStars(SHOOTING_STAR_COUNT));
-
     const handleMouseMove = (event) => {
       const x = (event.clientX / window.innerWidth - 0.5) * 2;
       const y = (event.clientY / window.innerHeight - 0.5) * 2;
@@ -51,6 +52,9 @@ export default function StarryBackground({ children }) {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  // ...
+
 
   return (
     <div className="starry-background">

@@ -38,9 +38,11 @@ export default function Hero() {
         <div className="relative flex justify-center">
           <div className="relative aspect-square w-[300px] md:w-[400px]">
             {/* background */}
-            <div className="absolute inset-0 z-0 rounded-full bg-gradient-to-b from-accent/20 to-accent/10 blur-[100px]"></div>
+            <div className="absolute inset-0 z-0 rounded-full bg-gradient-to-b 
+            from-accent/20 to-accent/10 blur-[100px]"></div>
             {/* portrait */}
-            <div className="absolute inset-[8%] z-10 overflow-hidden rounded-full bg-linear-to-tr from-accent to-accent/50 p-0.5">
+            <div className="absolute inset-[8%] z-10 overflow-hidden rounded-full 
+            bg-linear-to-tr   from-accent to-accent/50 p-0.5">
               <div className="relative h-full w-full overflow-hidden rounded-full">
                 <Image
                   src="/hero-image.jpg"
