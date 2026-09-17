@@ -7,6 +7,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 const links = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Projects", href: "#projects" },
   { label: "Contacts", href: "#contacts" },
 ];
