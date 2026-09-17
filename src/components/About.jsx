@@ -22,8 +22,8 @@ const services = [
 ];
 
 const stats = [
-  { value: "3", suffix: "+", label: "Completed Projects" },
-  { value: "95", suffix: "%", label: "Client satisfaction" },
+  { value: "10", suffix: "+", label: "Completed Projects" },
+  { value: "99", suffix: "%", label: "Client satisfaction" },
   { value: "1", suffix: "+", label: "Years of experience" },
 ];
 

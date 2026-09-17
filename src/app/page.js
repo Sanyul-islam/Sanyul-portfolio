@@ -5,12 +5,14 @@ import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Projects from '@/components/Projects';
 import Skills from '@/components/Skills';
+import StarryBackground from '@/components/StarryBackground';
 import TechStack from '@/components/Techstack';
 import React from 'react';
 
 const Home = () => {
   return (
     <>
+    <StarryBackground>
       <Navbar />
       <Hero />
       <TechStack />
@@ -19,6 +21,7 @@ const Home = () => {
       <Projects />
       <Contact />
       <Footer />
+      </StarryBackground>
     </>
   );
 };
