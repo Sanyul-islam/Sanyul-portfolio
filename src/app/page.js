@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Certifications from '@/components/Certifications';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero';
@@ -12,12 +13,13 @@ import React from 'react';
 const Home = () => {
   return (
     <>
-    <StarryBackground>
       <Navbar />
+    <StarryBackground>
       <Hero />
       <TechStack />
       <About />
       <Skills/>
+      <Certifications />
       <Projects />
       <Contact />
       <Footer />

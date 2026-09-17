@@ -293,21 +293,17 @@ section {
 .shooting-stars {
   position: absolute;
   inset: 0;
-
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-
   pointer-events: none;
-
   z-index: 2;
 }
 
-
 .shooting-star {
   position: absolute;
-
   width: 120px;
   height: 1px;
-
   border-radius: 9999px;
 
   background: linear-gradient(
@@ -318,44 +314,15 @@ section {
   );
 
   transform: rotate(-45deg);
-
   opacity: 0;
 
   animation: shooting-star 8s linear infinite;
 }
 
-
-.shooting-star-one {
-  top: 20%;
-  left: 75%;
-
-  animation-delay: 2s;
-}
-
-
-.shooting-star-two {
-  top: 35%;
-  left: 90%;
-
-  animation-delay: 5s;
-}
-
-
-.shooting-star-three {
-  top: 10%;
-  left: 55%;
-
-  animation-delay: 7s;
-}
-
-
 @keyframes shooting-star {
   0% {
     opacity: 0;
-
-    transform:
-      translate3d(0, 0, 0)
-      rotate(-45deg);
+    transform: translate3d(0, 0, 0) rotate(-45deg);
   }
 
   5% {
@@ -364,20 +331,15 @@ section {
 
   15% {
     opacity: 0;
-
-    transform:
-      translate3d(-400px, 400px, 0)
-      rotate(-45deg);
+    transform: translate3d(-400px, 400px, 0) rotate(-45deg);
   }
 
   100% {
     opacity: 0;
-
-    transform:
-      translate3d(-400px, 400px, 0)
-      rotate(-45deg);
+    transform: translate3d(-400px, 400px, 0) rotate(-45deg);
   }
 }
+
 
 
 /* =========================================
@@ -422,6 +384,48 @@ section {
     scroll-behavior: auto !important;
   }
 }
+
+/* =========================================
+   Hero Image Border style
+========================================= */
+@keyframes nebula-border {
+  0%,
+  100% {
+    filter: brightness(0.8);
+    opacity: 0.75;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    filter: brightness(1.4);
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes nebula-glow {
+  0%,
+  100% {
+    opacity: 0.35;
+    filter: blur(35px);
+    transform: scale(0.98);
+  }
+
+  50% {
+    opacity: 0.75;
+    filter: blur(50px);
+    transform: scale(1.05);
+  }
+}
+
+.animate-nebula-border {
+  animation: nebula-border 12s linear infinite;
+}
+
+.animate-nebula-glow {
+  animation: nebula-glow 5s ease-in-out infinite;
+}
+
 
 /* Visible keyboard focus */
 a:focus-visible,

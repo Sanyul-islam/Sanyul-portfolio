@@ -3,8 +3,11 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section id="home" className="mx-auto max-w-content ">
-      <div className="grid items-center gap-12 md:grid-cols-2">
+    <section
+      id="home"
+      className="mx-auto flex min-h-[70vh] max-w-content items-center px-6"
+    >
+      <div className="grid w-full items-center gap-12 md:grid-cols-2">
         {/* Text column */}
         <div className="px-6 pt-6 md:px-10 md:pt-10">
           <div className="flex gap-0.5">
@@ -36,14 +39,29 @@ export default function Hero() {
 
         {/* Image column */}
         <div className="relative flex justify-center">
-          <div className="relative aspect-square w-[300px] md:w-[400px]">
-            {/* background */}
-            <div className="absolute inset-0 z-0 rounded-full bg-gradient-to-b 
-            from-accent/20 to-accent/10 blur-[100px]"></div>
-            {/* portrait */}
-            <div className="absolute inset-[8%] z-10 overflow-hidden rounded-full 
-            bg-linear-to-tr   from-accent to-accent/50 p-0.5">
-              <div className="relative h-full w-full overflow-hidden rounded-full">
+          <div className="relative aspect-square w-75 md:w-[400px]">
+            {/* Outer nebula glow */}
+            <div
+              className="absolute inset-[5%] rounded-full
+      bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)]
+      opacity-50 blur-[35px]
+      animate-nebula-glow"
+            />
+
+            {/* Animated nebula border */}
+            <div
+              className="absolute inset-[7%] overflow-hidden rounded-full
+      animate-nebula-border"
+            >
+              <div
+                className="absolute inset-[-20%]
+        bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)]"
+              />
+            </div>
+
+            {/* Static portrait */}
+            <div className="absolute inset-[7%] rounded-full p-0.5">
+              <div className="relative h-full w-full overflow-hidden rounded-full bg-[#0b121f]">
                 <Image
                   src="/hero-image.jpg"
                   alt="Banner"

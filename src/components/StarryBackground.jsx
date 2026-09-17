@@ -23,8 +23,8 @@ function generateShootingStars(count) {
     id: index,
     left: Math.random() * 120 - 10,
     top: Math.random() * 100,
-    delay: Math.random() * 15,
-    duration: Math.random() * 6 + 12,
+    delay: Math.random() * 5,
+    duration: Math.random() * 6 + 8,
     size: Math.random() * 80 + 80,
   }));
 }
