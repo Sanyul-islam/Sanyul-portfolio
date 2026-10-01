@@ -76,24 +76,32 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   onClick={() => handleClick(link.href)}
-                  className={`relative block py-2 text-sm font-medium transition-colors duration-300 ${
-                    isActive ? "text-white" : "text-muted hover:text-white"
-                  }`}
+                  className={`relative block py-2 text-sm font-medium transition-colors 
+                    duration-300 ${
+                      isActive ? "text-white" : "text-muted hover:text-white"
+                    }`}
                 >
                   {link.label}
 
                   <span
-                    className={`absolute bottom-0 left-0 h-0.5 rounded-full bg-accent transition-all duration-300 ${
-                      isActive ? "w-full" : "w-0"
-                    }`}
+                    className={`absolute bottom-0 left-0 h-0.5 rounded-full
+                       bg-accent transition-all duration-300 ${
+                         isActive ? "w-full" : "w-0"
+                       }`}
                   />
                 </a>
               </li>
             );
           })}
         </ul>
-        <div className="">
-          <Button className="rounded-full">Hire Me</Button>
+        <div className="rounded-full">
+          <a
+            href="#contacts"
+            onClick={() => handleClick("#contacts")}
+            className="btn-filled rounded-full px-4! py-2! text-xs md:px-6! md:py-2.5! md:text-sm"
+          >
+            Hire Me
+          </a>
         </div>
 
         {/* Mobile menu button */}

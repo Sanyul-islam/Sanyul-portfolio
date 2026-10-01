@@ -1,3 +1,7 @@
+import { BsWhatsapp } from "react-icons/bs";
+import { FaWhatsappSquare } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+
 export default function Contact() {
   return (
     <section
@@ -7,11 +11,17 @@ export default function Contact() {
       <p className="section-eyebrow">Contacts</p>
 
       <div className="mt-6 grid gap-12 md:grid-cols-2 md:items-center">
+        <div>
         <h2 className="font-display header-gradient text-3xl font-bold leading-tight md:text-4xl">
           Have a project?
           <br />
           Let&apos;s talk!
         </h2>
+        <p className="mt-4 text-xl text-muted">
+          <BsWhatsapp className="inline-block mr-2" />
+          +880 1777-554471
+        </p>
+        </div>
 
         <div className="border border-accent p-8">
           <form className="space-y-6">

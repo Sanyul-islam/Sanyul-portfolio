@@ -65,28 +65,7 @@ const projects = [
     image: "/tiles-gallery.png",
     githubUrl: "https://github.com/Sanyul-islam/tiles-gallery",
     liveUrl: "https://tiles-gallery-lilac-seven.vercel.app/",
-  },
-  {
-    title: "Timeline & Analytics App",
-    tags: [
-      "Next.js",
-      "React.js",
-      "Context API",
-      "Recharts",
-      "Tailwind CSS",
-      "DaisyUI",
-      "React Icons",
-      "React Toastify",
-      "HTML",
-      "CSS",
-      "Javascript",
-    ],
-    description:
-      "This project is a modern web application that tracks user interactions (Text, Call, Video) with friends and visualizes them through a timeline and analytics dashboard. It helps users understand their communication patterns using interactive charts and a responsive UI.",
-    image: "/keen-keeper.png",
-    githubUrl: "https://github.com/Sanyul-islam/keen-keeper",
-    liveUrl: "https://keen-keeper-six-tawny.vercel.app/",
-  },
+  }
 ];
 
 export default function Projects() {

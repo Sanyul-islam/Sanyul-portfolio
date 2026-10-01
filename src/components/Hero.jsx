@@ -12,15 +12,15 @@ export default function Hero() {
         <div className="px-6 pt-6 md:px-10 md:pt-10">
           <div className="flex gap-0.5">
             <span className="section-eyebrow"></span>
-            <p className="font-display  text-muted text-2xl md:text-3xl">
+            <p className="font-display text-2xl text-muted md:text-3xl">
               Hello<span className="text-accent">.</span>
             </p>
           </div>
           <p className="mt-2 font-display text-2xl text-muted md:text-3xl">
             I&apos;m Sanyul
           </p>
-          <h1 className="mt-3 font-display header-gradient text-4xl font-bold leading-tight md:text-5xl">
-            Frontend Developer
+          <h1 className="header-gradient mt-3 font-display text-4xl leading-tight font-bold md:text-5xl">
+            Full Stack Developer
           </h1>
 
           <div className="mt-8 flex flex-wrap gap-4">
@@ -28,7 +28,7 @@ export default function Hero() {
               Got a project?
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1UTwMsZoFQ7LpRarDFf1CRbreXEBJaY9e/view?usp=sharing"
+              href="https://drive.google.com/file/d/1q-t6q8xdSHAb0p4fwTFEzqjNOUVIdVxa/view?usp=sharing"
               target="_blank"
               className="btn-outline header-gradient"
             >
@@ -39,31 +39,28 @@ export default function Hero() {
 
         {/* Image column */}
         <div className="relative flex justify-center">
-          <div className="relative aspect-square w-75 md:w-[400px]">
+          <div className="relative aspect-square w-75 md:w-100">
             {/* Outer nebula glow */}
             <div
-              className="absolute inset-[5%] rounded-full
-      bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)]
-      opacity-50 blur-[35px]
-      animate-nebula-glow"
+              className="absolute inset-[5%] rounded-full 
+            bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)] 
+            opacity-50 blur-[35px] animate-nebula-glow"
             />
-
             {/* Animated nebula border */}
             <div
-              className="absolute inset-[7%] overflow-hidden rounded-full
-      animate-nebula-border"
+              className="absolute inset-[7%] overflow-hidden rounded-full 
+            animate-nebula-border"
             >
               <div
-                className="absolute inset-[-20%]
-        bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)]"
+                className="absolute inset-[-20%] 
+              bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)]"
               />
             </div>
-
             {/* Static portrait */}
             <div className="absolute inset-[7%] rounded-full p-0.5">
-              <div className="relative h-full w-full overflow-hidden rounded-full bg-[#0b121f]">
+              <div className="relative h-full w-full overflow-hidden rounded-full bg-transparent">
                 <Image
-                  src="/hero-image.jpg"
+                  src="/hero-image.png"
                   alt="Banner"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
