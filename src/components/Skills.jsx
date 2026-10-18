@@ -10,6 +10,8 @@ import {
   SiVercel,
   SiJavascript,
   SiTailwindcss,
+  SiPostgresql,
+  SiMongoose,
 } from "react-icons/si";
 import { RiShieldKeyholeLine } from "react-icons/ri";
 
@@ -33,6 +35,8 @@ const skillGroups = [
       { name: "Node.js", icon: FaNodeJs },
       { name: "Express.js", icon: SiExpress },
       { name: "MongoDB", icon: SiMongodb },
+      { name: "Mongoose", icon: SiMongoose },
+      { name: "PostgreSQL", icon: SiPostgresql },
       { name: "BetterAuth", icon: RiShieldKeyholeLine },
       { name: "JWT Authentication", icon: SiJsonwebtokens },
       { name: "Vercel", icon: SiVercel },
