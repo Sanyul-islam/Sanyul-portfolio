@@ -55,7 +55,7 @@ export default function Hero() {
               />
             </div>
 
-            {/* Portrait (border-এর ভেতরে, p-0.5 দিয়ে border ring দেখা যাবে) */}
+            {/* Portrait */}
             <div className="absolute inset-[7%] rounded-full p-0.5">
               <div className="relative h-full w-full overflow-hidden rounded-full">
                 <Image
