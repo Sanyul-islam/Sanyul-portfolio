@@ -42,29 +42,28 @@ export default function Hero() {
           <div className="relative aspect-square w-75 md:w-100">
             {/* Outer nebula glow */}
             <div
-              className="absolute inset-[5%] rounded-full 
-            bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)] 
-            opacity-50 blur-[35px] animate-nebula-glow"
+              className="absolute inset-[5%] rounded-full
+      bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)]
+      opacity-50 blur-[35px] animate-nebula-glow"
             />
+
             {/* Animated nebula border */}
-            <div
-              className="absolute inset-[7%] overflow-hidden rounded-full 
-            animate-nebula-border"
-            >
+            <div className="absolute inset-[7%] overflow-hidden rounded-full animate-nebula-border">
               <div
-                className="absolute inset-[-20%] 
-              bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)]"
+                className="absolute inset-[-20%]
+        bg-[conic-gradient(from_0deg,#60a5fa,#a78bfa,#22d3ee,#c084fc,#60a5fa)]"
               />
             </div>
-            {/* Static portrait */}
+
+            {/* Portrait (border-এর ভেতরে, p-0.5 দিয়ে border ring দেখা যাবে) */}
             <div className="absolute inset-[7%] rounded-full p-0.5">
-              <div className="relative h-full w-full overflow-hidden rounded-full bg-transparent">
+              <div className="relative h-full w-full overflow-hidden rounded-full">
                 <Image
-                  src="/hero-image.png"
+                  src="/image.jpg"
                   alt="Banner"
                   fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover"
+                  sizes="(max-width: 768px) 300px, 400px"
+                  className="object-cover object-top"
                   priority
                 />
               </div>
