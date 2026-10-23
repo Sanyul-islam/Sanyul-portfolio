@@ -73,11 +73,13 @@ export default function About() {
             About me
           </h2>
           <p className="mt-5 max-w-md text-sm leading-relaxed text-muted">
-            I am a passionate Frontend Web Developer with a deep interest in
-            building modern, user-centric digital solutions. My journey is
-            driven by a curiosity for innovative tech, leading me to specialize
-            in building Modern Frontend Architectures with React, Tailwind CSS
-            and modern UI Libraries.
+            I am a Full Stack Web Developer passionate about building modern,
+            user-centric digital solutions. My journey is driven by a curiosity
+            for innovative technologies, leading me to specialize in developing
+            responsive frontend experiences and robust backend systems using
+            React, Next.js, Node.js, Express.js, and MongoDB. I enjoy turning
+            ideas into scalable, efficient, and user-friendly web applications
+            with clean code and modern UI libraries.
           </p>
 
           <div className="mt-10 grid grid-cols-3 gap-6 text-center">
